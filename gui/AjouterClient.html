@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="img/img1.jpg" alt="">
+        <nav>
+            <ul id="menu">
+                <li><a href="#formule1">L'inscription</a></li>
+                <li><a href="#formule2">Les information</a></li>
+                <li><a href="#formule5">Rechercher sur Client</a></li>
+                <li><a href="#formule6">Rechercher sur Compte</a></li>
+                <li><a href="#formule7">Débiteurs</a></li>
+                <li><a href="#formule3"> Ajouter un Montant</a></li>
+                <li><a href="#formule4">Supprimer un compte</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div id="formule1" class="form">
+        <div class="formule">
+                <form action="../metier/AjouterClient.php" method="POST">
+                    <input type="text" name="Prénom" placeholder="Prénom">
+                    <input type="text" name="Nom" placeholder="Nom">
+                    <input type="text" name="Adresse" placeholder="Adresse">
+                    <input type="text" name="CIN" placeholder="CIN">
+                    <input type="text" name="ncmt" placeholder="Numéro de compte">
+                    <input type="text " name="Montant" placeholder="Montant">
+                    
+                    <div id="submit">
+                        <input type="submit" name="submit1"   >
+                    </div>  
+               </form>
+        </div>
+   </div>
+   <div id="formule2" class="information">
+       <div class="formule1">
+         <form action="../metier/info.php" method="POST">
+            <input type="text" name="CIN" placeholder="CIN">
+            <div id="submit">
+                <input type="submit" name="submit2"  >
+            </div>
+        
+        </form>
+    </div>
+
+   </div>
+
+   <div id="formule3" class="information" >
+    <div class="formule1">
+      <form action="../metier/ajouterMontant.php" method="POST">
+         <input type="text" name="ncmt" placeholder="Numéro de compte">
+         <input type="text" name="x" placeholder="Ajouter une Montant">
+         <div id="submit">
+             <input type="submit" name="submit3"  >
+         </div>
+     
+     </form>
+ </div>
+</div>
+ 
+ <div id="formule4" class="information" >
+    <div class="formule1">
+      <form action="../metier/supprimer.php" method="POST">
+         <input type="text" name="CIN" placeholder="CIN">
+         
+         <div id="submit">
+             <input type="submit" name="submit4" value="supprimer" >
+         </div>
+     
+     </form>
+ </div>
+
+</div>
+
+</div>
+ 
+<div id="formule5" class="information" >
+   <div class="formule1">
+     <form action="../metier/rechercherClient.php" method="POST">
+        <input type="text" name="CIN" placeholder="CIN">
+        
+        
+        <div id="submit">
+            <input type="submit" name="submit5"  >
+        </div>
+    
+    </form>
+</div>
+
+</div>
+
+</div>
+ 
+<div id="formule6" class="information" >
+   <div class="formule1">
+     <form action="../metier/rechercherMontant.php" method="POST">
+        <input type="text" name="ncmt" placeholder="Numéro de compte">
+        
+        <div id="submit">
+            <input type="submit" name="submit6"  >
+        </div>
+    
+    </form>
+</div>
+
+
+</div>
+
+<div id="formule7" class="information" >
+    <div class="formule1">
+      <form action="../metier/Débiteurs.php" method="POST">
+         <input type="text" name="CIN" placeholder="CIN">
+         
+         
+         <div id="submit">
+             <input type="submit" name="submit7"  >
+         </div>
+     
+     </form>
+ </div>
+</body>
+</html>

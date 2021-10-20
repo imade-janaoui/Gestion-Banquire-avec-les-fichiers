@@ -1,0 +1,37 @@
+body{
+    background-color: cadetblue;
+    height: 100vh;
+    
+}
+div{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    background-color: black;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    border-radius: 200px;
+    transition: 0.4s;
+    margin-top: 20px;
+    position: fixed;
+    
+}
+a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+table,td,th{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
